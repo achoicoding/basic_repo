@@ -1,0 +1,73 @@
+ACMBP:DojoAssignments ac$ mkdir basic_repo
+ACMBP:DojoAssignments ac$ cd basic_repo/
+ACMBP:basic_repo ac$ touch index.html
+ACMBP:basic_repo ac$ touch readme.txt
+ACMBP:basic_repo ac$ touch style.css
+ACMBP:basic_repo ac$ git init
+Initialized empty Git repository in /Users/ac/Dropbox (Personal)/DojoAssignments/basic_repo/.git/
+ACMBP:basic_repo ac$ git remote add origin https://github.com/achoicoding/basic_repo.git
+ACMBP:basic_repo ac$ git add .
+ACMBP:basic_repo ac$ git commit -m "First Commit"
+[master (root-commit) 0e757c6] First Commit
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 readme.txt
+ create mode 100644 style.css
+ACMBP:basic_repo ac$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/achoicoding/basic_repo.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+ACMBP:basic_repo ac$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ACMBP:basic_repo ac$ git add index.html
+ACMBP:basic_repo ac$ git commit -m "new index.html"
+[master 94b3568] new index.html
+ 1 file changed, 81 insertions(+)
+ACMBP:basic_repo ac$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.55 KiB | 1.55 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/achoicoding/basic_repo.git
+   0e757c6..94b3568  master -> master
+Branch master set up to track remote branch master from origin.
+ACMBP:basic_repo ac$ pico readme.txt
+ACMBP:basic_repo ac$ pico style.css
+ACMBP:basic_repo ac$ git add .
+ACMBP:basic_repo ac$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   readme.txt
+	modified:   style.css
+
+ACMBP:basic_repo ac$ git commit -m "added text to files"
+[master d47f9b1] added text to files
+ 2 files changed, 7 insertions(+)
+ACMBP:basic_repo ac$ git push -u origin master
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 387 bytes | 387.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/achoicoding/basic_repo.git
+   94b3568..d47f9b1  master -> master
+Branch master set up to track remote branch master from origin.
